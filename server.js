@@ -15,6 +15,8 @@ var middleware = {
 
 app.use(middleware.requireAuthentication);
 app.use(middleware.logger);
+	//middleware ilgili linke girmeden hemen önce
+	// yapılmak istenenleri gireceğimiz yer.
 app.use(express.static(__dirname + '/public'));
 
 app.listen(PORT, function() {
